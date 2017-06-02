@@ -1,0 +1,31 @@
+alias linux-nvme				<linux-nvme@lists.infradead.org>
+alias linux-block				<linux-block@vger.kernel.org>
+alias linux-kernel				<linux-kernel@vger.kernel.org>
+alias linux-fsdevel				<linux-fsdevel@vger.kernel.org>
+alias linux-pci					<linux-pci@vger.kernel.org>
+alias linux-iommu                               <iommu@lists.linux-foundation.org>
+alias linux-ext4				<linux-ext4@vger.kernel.org>
+alias linux-doc					<linux-doc@vger.kernel.org>
+alias hch		Christoph Hellwig	<hch@lst.de>
+alias hchi		Christoph Hellwig	<hch@infradead.org>
+alias gnuc		GNU C Library		<libc-alpha@sourceware.org>
+alias sbates		Stephen Bates		<sbates@raithlin.com>
+alias jens		Jens Axboe		<axboe@fb.com>
+alias sagi		Sagi Grimberg		<sagi@grimberg.me>
+alias keith		Keith Busch		<keith.busch@intel.com>
+alias alviro		Alexander Viro		<viro@zeniv.linux.org.uk>
+alias bjorn		Bjorn Helgaas		<helgaas@kernel.org>
+alias gregkh		Greg Kroah-Hartman	<gregkh@linuxfoundation.org>
+alias scott		Scott Bauer		<scott.bauer@intel.com>
+alias dave		Dave Fugate		<david.fugate@intel.com>
+alias myron		Myron Stowe		<myron.stowe@redhat.com>
+alias joerg		Joerg Roedel		<jroedel@suse.de>
+alias mika		Mika Westerberg		<mika.westerberg@linux.intel.com>	
+alias lorenzo		Lorenzo Pieralisi	<lorenzo.pieralisi@arm.com>
+alias theo		Theodore Ts'o		<tytso@mit.edu>
+alias andreas		Andreas Dilger		<adilger.kernel@dilger.ca>
+alias gleixner		Thomas Gleixner		<tglx@linutronix.de>
+alias sinan		Sinan Kaya		<okaya@kernel.org>
+alias ashok		Ashok Raj		<ashok.raj@intel.com>
+alias ken		Kenneth Heitke		<kenneth.heitke@intel.com>
+alias alex		Alex Gagniuc		<alex_gagniuc@dellteam.com>

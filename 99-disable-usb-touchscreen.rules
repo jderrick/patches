@@ -1,0 +1,8 @@
+# Finds the touchscreen hid and disables the parent usb device
+# Re-enable by binding to usb (and subdevice to usbhid?)
+ACTION!="add", GOTO="touch_usb_end"
+SUBSYSTEM!="usb", GOTO="touch_usb_end"
+
+ATTRS{idVendor}=="2386", ATTRS{idProduct}=="3114", ATTR{authorized}="0", ATTR{power/control}="auto", GOTO="touch_usb_end"
+
+LABEL="touch_usb_end"

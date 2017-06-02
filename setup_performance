@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+timeout=0
+if [ ! -d /sys/block/nvme0n1 ]; then
+	modprobe vmd
+	modprobe nvme
+fi
+while [ ! -d /sys/block/nvme0n1 ]; do
+	if (($timeout >= 60)); then
+		echo "NVMe controller failed to enumerate"
+		exit 1
+	fi
+	timeout=$((timeout + 2))
+	sleep 2
+done
+
+echo 0 > /sys/block/nvme0n1/queue/iostats
+echo 1 > /sys/block/nvme0n1/queue/io_poll
+for x in /sys/devices/system/cpu/cpu[[:digit:]]*; do echo performance > $x/cpufreq/scaling_governor; done

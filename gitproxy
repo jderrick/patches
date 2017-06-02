@@ -1,0 +1,12 @@
+#!/bin/bash
+PROXY=socks.foo.com
+echo $1 > /tmp/1
+echo $2 > /tmp/2
+case $1 in
+        *.foo.com|192.168.*|127.0.*|localhost|10.*)
+                exec socat STDIO TCP:$1:$2
+        ;;
+        *)
+                exec socat STDIO SOCKS4:$PROXY:$1:$2
+        ;;
+esac

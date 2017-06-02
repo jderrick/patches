@@ -1,0 +1,10 @@
+#!/bin/bash
+
+pushd .
+rm -f cscope.files cscope.out
+find -L . -iname '*.c' ! -iname '*.mod.c' \
+	-o -iname '*.cpp' \
+	-o -iname '*.h' \
+	-o -iname '*.s' > cscope.files
+cscope -bi cscope.files
+popd
