@@ -5,6 +5,6 @@ rm -f cscope.files cscope.out
 find -L . -iname '*.c' ! -iname '*.mod.c' \
 	-o -iname '*.cpp' \
 	-o -iname '*.h' \
-	-o -iname '*.s' > cscope.files
-cscope -bi cscope.files
+	-o -iname '*.s' | grep -v "^\./tools/" > cscope.files
+cscope -bki cscope.files
 popd
